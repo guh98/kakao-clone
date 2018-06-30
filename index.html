@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <title>Friends</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <header class="top_header">
   <div class="header_top">
     <div class="header_column">
       <i class="fas fa-plane"></i>
@@ -39,7 +40,7 @@
   <main class="friends">
     <div class="search-bar">
       <i class="fas fa-search"></i>
-      <input type="text" placeholder="Find friends, cahts, Plus Friends">
+      <input type="text" placeholder="친구를 찾고, 대화하고, 추가하세요">
     </div>
     <section class="friends_section">
       <header class="friends_sction-header">
@@ -47,14 +48,16 @@
       </header>
       <div class="friends_section-rows">
         <div class="friends_section-row">
-          <a href="profile.html">
-            <img src="images/avatar.jpg" alt="">
-            <span class="friends_section-name">김근희</span>
-          </a>
+          <img src="images/avatar.jpg" alt="">
+            <a href="profile.html" class="friends_section-name">
+              김근희
+            </a>
         </div>
         <div class="friends_section-row">
-          <img src="images/avatar.jpg" alt="">
-          <span class="friends_section-name">Friends' Names Display</span>
+          <a href="profile.html" class="friends_section-name">
+            <i class="fas fa-exclamation-circle"></i>
+            Friends' Names Display
+          </a>
         </div>
       </div>
     </section>
@@ -63,7 +66,7 @@
         <h6 class="friends_section-title">친구</h6>
       </header>
       <div class="friends_section-rows">
-        <div class="friends_section-row">
+        <div class="friends_section-row with-tagline">
           <div class="friends_section-column">
             <img src="images/avatar.jpg" alt="">
             <span class="friends_section-name">유원규</span>
@@ -77,16 +80,20 @@
   </main>
   <nav class="tab-bar">
     <a href="index.html" class="tab-bar__tap tab-bar__tab--selected">
-      <i class="fas fa-user"></i><span class="tab-bar__title">Friends</span>
+      <i class="fas fa-user"></i>
+      <span class="tab-bar__title">Friends</span>
     </a>
     <a href="chats.html" class="tab-bar__tap">
-      <i class="fas fa-comment"></i><span class="tab-bar__title">Chats</span>
+      <i class="fas fa-comment"></i>
+      <span class="tab-bar__title">Chats</span>
     </a>
     <a href="find.html" class="tab-bar__tap">
-      <i class="fas fa-search"></i><span class="tab-bar__title">Find</span>
+      <i class="fas fa-search"></i>
+      <span class="tab-bar__title">Find</span>
     </a>
     <a href="more.html" class="tab-bar__tap">
-      <i class="fas fa-ellipsis-h"></i><span class="tab-bar__title">More</span>
+      <i class="fas fa-ellipsis-h"></i>
+      <span class="tab-bar__title">More</span>
     </a>
   </nav>
 </body>
