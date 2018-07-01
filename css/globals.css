@@ -1,11 +1,15 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Stylish", sans-serif;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+* {
+  font-family: "Stylish", sans-serif;
+}
+
 main {
-  animation: .5s bodyPopIn ease-in-out;
+  animation: 0.5s bodyPopIn ease-in-out;
 }
 
 @keyframes bodyPopIn {
